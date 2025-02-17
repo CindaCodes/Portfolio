@@ -1,0 +1,24 @@
+:root {
+  --font-family-1: "Roboto", serif;
+  --font-family-2: "Bricolage Grotesque", serif;
+  --primary-color: #394a51;
+  --secondary-color:  #7fa99b;
+  --tertiary-color: #fbf2d5;
+  --quaternary-color: #fdc57b;
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-2);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--font-family-1);
+    color: var(--primary-color);
+}
+
