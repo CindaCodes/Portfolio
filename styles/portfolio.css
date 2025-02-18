@@ -2,23 +2,57 @@
   --font-family-1: "Roboto", serif;
   --font-family-2: "Bricolage Grotesque", serif;
   --primary-color: #394a51;
-  --secondary-color:  #7fa99b;
+  --secondary-color: #7fa99b;
   --tertiary-color: #fbf2d5;
   --quaternary-color: #fdc57b;
 }
 
 body {
-    background-color: var(--tertiary-color);
+  font-family: var(--font-family-1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-2);
-    font-weight: bold;
-    color: var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-2);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
 }
 
 p {
-    font-family: var(--font-family-1);
-    color: var(--primary-color);
+  font-weight: normal;
 }
 
+.hero {
+  background-color: var(--quaternary-color);
+  color: var(--primary-color);
+  padding: 160px 20px;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.btn-branding {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  color: var(--tertiary-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
