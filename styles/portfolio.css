@@ -1,48 +1,108 @@
 :root {
   --font-family-1: "Roboto", serif;
   --font-family-2: "Bricolage Grotesque", serif;
-  --primary-color: #394a51;
-  --secondary-color: #7fa99b;
-  --tertiary-color: #fbf2d5;
-  --quaternary-color: #fdc57b;
+  --primary-color: #445c3c;
+  --secondary-color: #fda77f;
+  --tertiary-color: #c9d99e;
+  --quaternary-color: #fae8c8;
+  --box-shadow: 0 5px 10px #445c3c;
 }
 
 body {
   font-family: var(--font-family-1);
-  background-color: var(--tertiary-color);
   color: var(--primary-color);
 }
 
+.navbar-custom {
+  background-color: var(--primary-color);
+}
+
+.navbar-text {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+.logo {
+  width: 90%;
+}
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--font-family-2);
   font-weight: bold;
 }
 
 h1 {
   font-size: 96px;
-  line-height: 1.5;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 48px;
 }
-
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
 p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
 }
-
-.hero {
-  background-color: var(--quaternary-color);
+.about-me{
+    margin-top: 100px;
+}
+.about-paragraphs{
+    margin: 0 100px;
+}
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.navigation-links a {
+  margin: 20px;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  font-family: var(--font-family-2);
+}
+.primary-link:hover {
+  background: var(--secondary-color);
   color: var(--primary-color);
-  padding: 160px 20px;
+}
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  font-family: var(--font-family-2);
+}
+.secondary-link:hover {
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.hero {
+  background: linear-gradient(
+    to top,
+    var(--secondary-color) 0%,
+    var(--secondary-color) 1%,
+    var(--quaternary-color) 26%,
+    var(--quaternary-color) 48%,
+    var(--quaternary-color) 75%,
+    var(--secondary-color) 100%
+  );
+  color: var(--primary-color);
+  padding: 110px 20px 20px 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .hero p {
@@ -58,7 +118,7 @@ p {
 }
 
 .btn-branding {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 4px;
   color: var(--tertiary-color);
   font-size: 18px;
@@ -79,6 +139,10 @@ p {
   padding: 120px 60px;
 }
 
+.img-border {
+    border: 10px solid var(--secondary-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -90,7 +154,7 @@ p {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 100px 20px 40px 20px;
   }
 
   .project-desciption {
