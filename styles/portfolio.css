@@ -1,0 +1,99 @@
+:root {
+  --font-family-1: "Roboto", serif;
+  --font-family-2: "Bricolage Grotesque", serif;
+  --primary-color: #096487;
+  --secondary-color: #f0c5c8;
+  --tertiary-color: #a1acbf;
+  --quaternary-color: #c1c589;
+  --box-shadow: 0 5px 10px #445c3c;
+}
+
+body {
+  font-family: var(--font-family-1);
+  color: var(--primary-color);
+}
+
+/*Header*/
+header {
+  background: linear-gradient(
+    to top,
+    var(--tertiary-color) 0%,
+    var(--tertiary-color) 1%,
+    #e0e0e0 26%,
+    var(--secondary-color) 48%,
+    #d9d9d9 75%,
+    var(--tertiary-color) 100%
+  );
+}
+
+.header {
+  margin: 120px auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-2);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+.nav-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.nav-links a {
+  margin: 20px;
+}
+
+.contact-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  font-family: var(--font-family-2);
+}
+
+.contact-link:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.about-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--tertiary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--primary-color);
+  font-family: var(--font-family-2);
+}
+
+.about-link:hover {
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+/*Body*/
+.img {
+  border: 10px solid var(--secondary-color);
+  
+}
+
+.img-container {
+  height: 380px;
+  background-color: var(--secondary-color);
+}
