@@ -39,7 +39,7 @@ h3 {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 70px;
 }
 
 h4 {
@@ -109,13 +109,15 @@ h4 {
   height: 120px;
 }
 
-.list {
-  height: 540px;
+.list-container {
+  height: 610px;
   background-color: var(--primary-color);
   padding: 15px;
   color: var(--secondary-color);
 }
-
+.list{
+  padding: 10px;
+}
 .shecodes-instalink {
   text-decoration: none;
   color: var();

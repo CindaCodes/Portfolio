@@ -30,26 +30,29 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script
       src="https://kit.fontawesome.com/17360664a6.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25px"
-          class="ms-3 me-3"
-          viewBox="0 0 640 512"
-        >
-          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-          <path
-            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-          />
-        </svg>
-        <a class="navbar-brand" href="#">CindaCodes</a>
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25px"
+            class="ms-3 me-3"
+            viewBox="0 0 640 512"
+          >
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+            />
+          </svg>
+        </a>
+        <a class="navbar-brand" href="/">CindaCodes</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -73,7 +76,7 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="/index.html#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/certifications.html">Certifications</a>
@@ -140,8 +143,12 @@
 
     <header class="container-fluid">
       <div class="row">
-        <div class="home-img col-lg-6 text-center">
-          <img src="/images/Standing.png" class="home-img img-fluid" alt="" />
+        <div class="home-img col-lg-6 text-center mt-5">
+          <img
+            src="/images/Standing.png"
+            class="home-img img-fluid mt-5"
+            alt=""
+          />
         </div>
         <div class="col-lg-6 text-center header">
           <h4 class="mt-5">👋🏼 Hello, I'm</h4>
@@ -167,422 +174,257 @@
         </div>
       </div>
     </header>
-    <h1 class="text-center" id="projects">Welcome to my Projects</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="mb-3 mt-4 text-center">World Clock App</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/clock.png" class="img-fluid rounded img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://jacindas-world-clock.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="Clock project"
-              >Launch Clock App</a
+    <main id="projects">
+      <h1 class="text-center mt-3">Welcome to my Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="mb-3 mt-4 text-center">World Clock App</h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
             >
-          </div>
-          <div class="p1 mt-5">
-            <p>
-              🕰️ Jacinda's World Clock App is a user-friendly web application
-              designed to help you keep track of time across multiple cities
-              worldwide. Whether you're coordinating with international
-              colleagues, planning travel, or staying in touch with friends and
-              family abroad, this app provides the essential tools to manage
-              time zone differences effectively.
-            </p>
-          </div>
-
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Global City Selection: Easily select from a comprehensive list
-                of cities to view their current local times, ensuring you're
-                always in sync with various time zones.
-              </li>
-              <li>
-                Current Location Integration: The app automatically detects and
-                displays your current local time, providing a seamless reference
-                point for comparing time across different regions.
-              </li>
-              <li>
-                Analog Clock Display: Enjoy a beautifully designed analog clock
-                that shows the current time, offering a classic, visual way to
-                stay on track.
-              </li>
-              <li>
-                12-Hour and 24-Hour Formats: Customize your time display
-                preference with the option to switch between 12-hour and 24-hour
-                formats, catering to your personal or regional standards.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              This project is open-source, reflecting a commitment to community
-              collaboration and continuous improvement. Experience a
-              straightforward approach to global time management with Jacinda's
-              World Clock App—ensuring you're always on time, no matter where
-              you are in the world. 🕰️🌍
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="mb-3 mt-4 text-center">Weather Forecast App</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/weather.png" class="img-fluid img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://jacindas-weather-forcast.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="Weather project"
-              >Launch Weather App</a
-            >
-          </div>
-          <div class="p1 mt-5">
-            <p>
-              ☀️Introducing Weather Forecast App, a user-friendly web
-              application designed to provide accurate and up-to-date weather
-              information tailored to your location. Whether you're planning
-              your day or preparing for unexpected weather changes, this app
-              offers the essential details you need to stay informed.
-            </p>
-          </div>
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Current Temperature: Instantly view the current temperature in
-                Celsius or Fahrenheit, ensuring you're dressed appropriately for
-                the weather.
-              </li>
-              <li>
-                Feels Like Temperature: Understand how the weather truly feels,
-                taking into account factors like humidity and wind, so you can
-                plan your activities comfortably."
-              </li>
-              <li>
-                Atmospheric Pressure: Monitor pressure levels to anticipate
-                weather changes, which can be particularly useful for
-                individuals sensitive to pressure fluctuations.
-              </li>
-              <li>
-                Humidity Levels: Stay informed about moisture levels in the air,
-                aiding in health considerations and daily comfort.
-              </li>
-              <li>
-                Wind Speed and Direction: Access real-time data on wind
-                conditions, essential for outdoor enthusiasts and professionals
-                alike.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              Feeling incredibly honored and a little speechless 🥹💖. SheCodes
-              featured my project on their
+              <img
+                src="/images/clock.png"
+                class="img-fluid rounded img"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-2 mt-3">
+                <iframe
+                  src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=World-Clock&type=star&count=true&size=large"
+                  frameborder="0"
+                  scrolling="0"
+                  width="170"
+                  height="30"
+                  title="GitHub"
+                ></iframe>
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
               <a
-                class="shecodes-instalink"
-                href="https://www.instagram.com/p/DFnWrQxqhVV/?utm_source=ig_web_copy_link"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                >
-                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  />
-                </svg>
-                Instagram</a
-              >! It’s surreal to see something I built get recognized,
-              especially by a community that uplifts and empowers women in
-              tech.🌡️❄️
-            </p>
+                href="https://jacindas-world-clock.netlify.app/"
+                target="_blank"
+                class="primary-link project-link"
+                title="Clock project"
+                >Launch Clock App</a
+              >
+            </div>
+            <div class="p1 mt-3">
+              <p>
+                🕰️ Jacinda's World Clock App is a user-friendly web application
+                designed to help you keep track of time across multiple cities
+                worldwide. Whether you're coordinating with international
+                colleagues, planning travel, or staying in touch with friends
+                and family abroad, this app provides the essential tools to
+                manage time zone differences effectively.
+              </p>
+            </div>
+
+            <div class="list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    Global City Selection: Easily select from a comprehensive
+                    list of cities to view their current local times, ensuring
+                    you're always in sync with various time zones.
+                  </li>
+                  <li>
+                    Current Location Integration: The app automatically detects
+                    and displays your current local time, providing a seamless
+                    reference point for comparing time across different regions.
+                  </li>
+                  <li>
+                    Analog Clock Display: Enjoy a beautifully designed analog
+                    clock that shows the current time, offering a classic,
+                    visual way to stay on track.
+                  </li>
+                  <li>
+                    12-Hour and 24-Hour Formats: Customize your time display
+                    preference with the option to switch between 12-hour and
+                    24-hour formats, catering to your personal or regional
+                    standards.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>
+                This project is open-source, reflecting a commitment to
+                community collaboration and continuous improvement. Experience a
+                straightforward approach to global time management with
+                Jacinda's World Clock App—ensuring you're always on time, no
+                matter where you are in the world. 🕰️🌍
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="mb-3 mt-4 text-center">AI Workout Wizard</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/workout.png" class="img-fluid img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://ai-workout-wizard.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="AI Workout Wizard project"
-              >Launch Workout App</a
+          <div class="col-md-4">
+            <h2 class="mb-3 mt-4 text-center">Weather Forecast App</h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
             >
+              <img src="/images/weather.png" class="img-fluid img" alt="" />
+            </div>
+            <div class="col-sm-2 mt-3">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=weather-app&type=star&count=true&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
+              <a
+                href="https://jacindas-weather-forcast.netlify.app/"
+                target="_blank"
+                class="primary-link project-link"
+                title="Weather project"
+                >Launch Weather App</a
+              >
+            </div>
+            <div class="p1 mt-3">
+              <p>
+                ☀️Introducing Weather Forecast App, a user-friendly web
+                application designed to provide accurate and up-to-date weather
+                information tailored to your location. Whether you're planning
+                your day or preparing for unexpected weather changes, this app
+                offers the essential details you need to stay informed.
+              </p>
+            </div>
+            <div class="list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    Current Temperature: Instantly view the current temperature
+                    in Celsius or Fahrenheit, ensuring you're dressed
+                    appropriately for the weather.
+                  </li>
+                  <li>
+                    Feels Like Temperature: Understand how the weather truly
+                    feels, taking into account factors like humidity and wind,
+                    so you can plan your activities comfortably."
+                  </li>
+                  <li>
+                    Atmospheric Pressure: Monitor pressure levels to anticipate
+                    weather changes, which can be particularly useful for
+                    individuals sensitive to pressure fluctuations.
+                  </li>
+                  <li>
+                    Humidity Levels: Stay informed about moisture levels in the
+                    air, aiding in health considerations and daily comfort.
+                  </li>
+                  <li>
+                    Wind Speed and Direction: Access real-time data on wind
+                    conditions, essential for outdoor enthusiasts and
+                    professionals alike.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>
+                Feeling incredibly honored and a little speechless 🥹💖. SheCodes
+                featured my project on their
+                <a
+                  class="shecodes-instalink"
+                  href="https://www.instagram.com/p/DFnWrQxqhVV/?utm_source=ig_web_copy_link"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="20px"
+                  >
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                  Instagram</a
+                >! It’s surreal to see something I built get recognized,
+                especially by a community that uplifts and empowers women in
+                tech.🌡️❄️
+              </p>
+            </div>
           </div>
-          <div class="p1 mt-5">
-            <p>
-              💪Introducing AI Workout Wizard, an innovative web application
-              designed to revolutionize your fitness journey by providing
-              personalized workout plans tailored to your unique needs. Whether
-              you're a beginner aiming to increase endurance or an advanced
-              athlete focusing on strength training, AI Workout Wizard crafts
-              the perfect regimen for you.
-            </p>
-          </div>
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Diverse Workout Types: Choose from a wide array of exercise
-                categories, including Strength Training, High-Intensity Interval
-                Training (HIIT), Yoga, Pilates, and more, ensuring a
-                well-rounded fitness experience.
-              </li>
-              <li>
-                Customized Fitness Levels: Select your current fitness
-                level—Beginner, Intermediate, or Advanced—to receive workouts
-                that match your capabilities and promote progressive
-                improvement.
-              </li>
-              <li>
-                Goal-Oriented Plans: Set specific fitness objectives such as
-                Building Muscle, Burning Fat, Improving Flexibility, or
-                Increasing Endurance, and receive targeted workout plans
-                designed to help you achieve these goals efficiently.
-              </li>
-              <li>
-                Flexible Time Commitments: Accommodate your schedule with
-                workout durations ranging from quick 5-minute sessions to
-                comprehensive 60-minute routines, making it easier to stay
-                consistent regardless of time constraints.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              AI Workout Wizard is an open-source project, reflecting a
-              commitment to community collaboration and continuous enhancement.
-              The application is hosted on Netlify, ensuring reliable and fast
-              access for users worldwide.🏋🏼‍♀️
-            </p>
+          <div class="col-md-4">
+            <h2 class="mb-3 mt-4 text-center">AI Workout Wizard</h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
+            >
+              <img src="/images/workout.png" class="img-fluid img" alt="" />
+            </div>
+            <div class="col-sm-2 mt-3">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=weather-app&type=star&count=true&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
+              <a
+                href="https://ai-workout-wizard.netlify.app/"
+                target="_blank"
+                class="primary-link project-link"
+                title="AI Workout Wizard project"
+                >Launch Workout App</a
+              >
+            </div>
+            <div class="p1 mt-3">
+              <p>
+                💪Introducing AI Workout Wizard, an innovative web application
+                designed to revolutionize your fitness journey by providing
+                personalized workout plans tailored to your unique needs.
+                Whether you're a beginner aiming to increase endurance or an
+                advanced athlete focusing on strength training, AI Workout
+                Wizard crafts the perfect regimen for you.
+              </p>
+            </div>
+            <div class="list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    Diverse Workout Types: Choose from a wide array of exercise
+                    categories, including Strength Training, High-Intensity
+                    Interval Training (HIIT),and more, ensuring a well-rounded
+                    fitness experience.
+                  </li>
+                  <li>
+                    Customized Fitness Levels: Select your current fitness
+                    level—Beginner, Intermediate, or Advanced—to receive
+                    workouts that match your capabilities and promote
+                    progressive improvement.
+                  </li>
+                  <li>
+                    Goal-Oriented Plans: Set specific fitness objectives such as
+                    Building Muscle, or Increasing Endurance, and receive
+                    targeted workout plans designed to help you achieve these
+                    goals efficiently.
+                  </li>
+                  <li>
+                    Flexible Time Commitments: Accommodate your schedule with
+                    workout durations ranging from quick 5-minute sessions to
+                    comprehensive 60-minute routines, making it easier to stay
+                    consistent regardless of time constraints.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>
+                AI Workout Wizard is an open-source project, reflecting a
+                commitment to community collaboration and continuous
+                enhancement. The application is hosted on Netlify, ensuring
+                reliable and fast access for users worldwide.🏋🏼‍♀️
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="mb-3 mt-4 text-center">World Clock App</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/clock.png" class="img-fluid rounded img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://jacindas-world-clock.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="Clock project"
-              >Launch Clock App</a
-            >
-          </div>
-          <div class="p1 mt-5">
-            <p>
-              🕰️ Jacinda's World Clock App is a user-friendly web application
-              designed to help you keep track of time across multiple cities
-              worldwide. Whether you're coordinating with international
-              colleagues, planning travel, or staying in touch with friends and
-              family abroad, this app provides the essential tools to manage
-              time zone differences effectively.
-            </p>
-          </div>
-
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Global City Selection: Easily select from a comprehensive list
-                of cities to view their current local times, ensuring you're
-                always in sync with various time zones.
-              </li>
-              <li>
-                Current Location Integration: The app automatically detects and
-                displays your current local time, providing a seamless reference
-                point for comparing time across different regions.
-              </li>
-              <li>
-                Analog Clock Display: Enjoy a beautifully designed analog clock
-                that shows the current time, offering a classic, visual way to
-                stay on track.
-              </li>
-              <li>
-                12-Hour and 24-Hour Formats: Customize your time display
-                preference with the option to switch between 12-hour and 24-hour
-                formats, catering to your personal or regional standards.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              This project is open-source, reflecting a commitment to community
-              collaboration and continuous improvement. Experience a
-              straightforward approach to global time management with Jacinda's
-              World Clock App—ensuring you're always on time, no matter where
-              you are in the world. 🕰️🌍
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="mb-3 mt-4 text-center">Weather Forecast App</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/weather.png" class="img-fluid img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://jacindas-weather-forcast.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="Weather project"
-              >Launch Weather App</a
-            >
-          </div>
-          <div class="p1 mt-5">
-            <p>
-              ☀️Introducing Weather Forecast App, a user-friendly web
-              application designed to provide accurate and up-to-date weather
-              information tailored to your location. Whether you're planning
-              your day or preparing for unexpected weather changes, this app
-              offers the essential details you need to stay informed.
-            </p>
-          </div>
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Current Temperature: Instantly view the current temperature in
-                Celsius or Fahrenheit, ensuring you're dressed appropriately for
-                the weather.
-              </li>
-              <li>
-                Feels Like Temperature: Understand how the weather truly feels,
-                taking into account factors like humidity and wind, so you can
-                plan your activities comfortably."
-              </li>
-              <li>
-                Atmospheric Pressure: Monitor pressure levels to anticipate
-                weather changes, which can be particularly useful for
-                individuals sensitive to pressure fluctuations.
-              </li>
-              <li>
-                Humidity Levels: Stay informed about moisture levels in the air,
-                aiding in health considerations and daily comfort.
-              </li>
-              <li>
-                Wind Speed and Direction: Access real-time data on wind
-                conditions, essential for outdoor enthusiasts and professionals
-                alike.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              Feeling incredibly honored and a little speechless 🥹💖. SheCodes
-              featured my project on their
-              <a
-                class="shecodes-instalink"
-                href="https://www.instagram.com/p/DFnWrQxqhVV/?utm_source=ig_web_copy_link"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                >
-                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  />
-                </svg>
-                Instagram</a
-              >! It’s surreal to see something I built get recognized,
-              especially by a community that uplifts and empowers women in
-              tech.🌡️❄️
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <h2 class="mb-3 mt-4 text-center">AI Workout Wizard</h2>
-          <div
-            class="img-container d-flex flex-wrap align-items-center rounded"
-          >
-            <img src="/images/workout.png" class="img-fluid img" alt="" />
-          </div>
-          <div class="mt-5 app-button d-flex justify-content-center">
-            <a
-              href="https://ai-workout-wizard.netlify.app/"
-              target="_blank"
-              class="primary-link project-link"
-              title="AI Workout Wizard project"
-              >Launch Workout App</a
-            >
-          </div>
-          <div class="p1 mt-5">
-            <p>
-              💪Introducing AI Workout Wizard, an innovative web application
-              designed to revolutionize your fitness journey by providing
-              personalized workout plans tailored to your unique needs. Whether
-              you're a beginner aiming to increase endurance or an advanced
-              athlete focusing on strength training, AI Workout Wizard crafts
-              the perfect regimen for you.
-            </p>
-          </div>
-          <div class="list rounded shadow">
-            <p>Key Features:</p>
-            <ul>
-              <li>
-                Diverse Workout Types: Choose from a wide array of exercise
-                categories, including Strength Training, High-Intensity Interval
-                Training (HIIT), Yoga, Pilates, and more, ensuring a
-                well-rounded fitness experience.
-              </li>
-              <li>
-                Customized Fitness Levels: Select your current fitness
-                level—Beginner, Intermediate, or Advanced—to receive workouts
-                that match your capabilities and promote progressive
-                improvement.
-              </li>
-              <li>
-                Goal-Oriented Plans: Set specific fitness objectives such as
-                Building Muscle, Burning Fat, Improving Flexibility, or
-                Increasing Endurance, and receive targeted workout plans
-                designed to help you achieve these goals efficiently.
-              </li>
-              <li>
-                Flexible Time Commitments: Accommodate your schedule with
-                workout durations ranging from quick 5-minute sessions to
-                comprehensive 60-minute routines, making it easier to stay
-                consistent regardless of time constraints.
-              </li>
-            </ul>
-          </div>
-          <div class="p2 mt-4">
-            <p>
-              AI Workout Wizard is an open-source project, reflecting a
-              commitment to community collaboration and continuous enhancement.
-              The application is hosted on Netlify, ensuring reliable and fast
-              access for users worldwide.🏋🏼‍♀️
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
