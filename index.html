@@ -14,6 +14,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -154,28 +155,34 @@
           <h4 class="mt-5">👋🏼 Hello, I'm</h4>
           <h1 class="mt-3">Jacinda Bietz</h1>
           <h2 class="mb-5 mt-3">Front-end Developer</h2>
-          <div class="nav-links mb-5">
+          <h5>Check out my projects</h5>
+          <div class="nav-links">
             <a
-              href="/about.html#contact"
-              class="blue-link"
-              title="Contact Jacinda Bietz"
-              >Contact me</a
+              href="/#python"
+              class="pink-link"
+              title="Jacinda Bietz Python Projects"
             >
-            <a href="/about.html" class="pink-link" title="About Jacinda Bietz"
-              >About me</a
-            >
+              <img src="/images/Python-Logo.png" height="50px" alt="" /><br />
+              Projects
+            </a>
             <a
-              href="/index.html#projects"
+              href="/#web-dev"
               class="blue-link"
-              title="Jacinda Bietz Projects"
-              >Go to Projects</a
+              title="Jacinda Bietz HTML CSS and Javascript Projects"
+              ><img src="/images/HTML.png" height="50px" alt="" /><img
+                src="/images/css.png"
+                height="50px"
+                class="mx-2"
+                alt=""
+              /><img src="/images/javascript.png" height="50px" alt="" /><br />
+              Projects</a
             >
           </div>
         </div>
       </div>
     </header>
-    <main id="projects">
-      <h1 class="text-center mt-3">Welcome to my Projects</h1>
+    <main>
+      <h1 class="text-center mt-3" id="web-dev">Web Development Projects</h1>
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -190,14 +197,14 @@
               />
             </div>
             <div class="col-sm-2 mt-3">
-                <iframe
-                  src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=World-Clock&type=star&count=true&size=large"
-                  frameborder="0"
-                  scrolling="0"
-                  width="170"
-                  height="30"
-                  title="GitHub"
-                ></iframe>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=World-Clock&type=star&count=true&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
             </div>
             <div class="mt-3 app-button d-flex justify-content-center">
               <a
@@ -420,6 +427,215 @@
                 commitment to community collaboration and continuous
                 enhancement. The application is hosted on Netlify, ensuring
                 reliable and fast access for users worldwide.🏋🏼‍♀️
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center mt-3" id="python">Python Projects</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="mb-3 mt-4 text-center">🌤️ Weather App CLI</h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
+            >
+              <img
+                src="/images/python-weather.png"
+                class="img-fluid rounded img"
+                alt=""
+              />
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
+              <a
+                href="https://replit.com/@jcbietz/PB-Final-Project"
+                target="_blank"
+                class="primary-link project-link"
+                title="Weather App CLI"
+                >Launch Weather App CLI</a
+              >
+            </div>
+            <div class="pp1 mt-3">
+              <p>
+                This Python-based Weather App is a command-line tool that
+                provides real-time weather updates and forecasts for any city
+                worldwide. It leverages the SheCodes Weather API to deliver
+                accurate results while enhancing the user experience with
+                colorful output using the rich library.
+              </p>
+            </div>
+
+            <div class="python-list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    🌡️ Current Weather: Instantly view the current temperature
+                    for any city.
+                  </li>
+                  <li>
+                    📅 5-Day Forecast: Get daily temperature predictions for the
+                    upcoming days.
+                  </li>
+                  <li>
+                    🎨 Styled Output: Clean, color-coded display for better
+                    readability.
+                  </li>
+                  <li>
+                    🔑 API Integration: Seamlessly connects with the SheCodes
+                    Weather API.
+                  </li>
+                  <li>
+                    🎨 🛠️ Error Handling: Prompts users if no valid city name is
+                    provided.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>Tech Stack: Python, Requests, Rich, SheCodes Weather API</p>
+              <p>
+                This project highlights my ability to integrate APIs, manage
+                data formatting, and create user-friendly CLI applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h2 class="mb-3 mt-4 text-center">🚙 AI Itinerary Planner</h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
+            >
+              <img
+                src="/images/python-itinerary.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
+              <a
+                href="https://colab.research.google.com/drive/1a5i1TmzIHqBM4f2-kR2RiyD4cicyvgEM#scrollTo=yocjnxYJJEBJ"
+                target="_blank"
+                class="primary-link project-link"
+                title="AI Itinerary Project 
+                Link"
+                >Launch AI Itinerary Planner</a
+              >
+            </div>
+            <div class="pp1 mt-3">
+              <p>
+                The AI Travel Itinerary Planner is an interactive Python-based
+                command-line tool that simplifies trip planning. It generates
+                personalized travel itineraries and provides real-time weather
+                updates for both departure and destination cities. This project
+                showcases API integration, user input handling, and rich CLI
+                formatting.
+              </p>
+            </div>
+            <div class="python-list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    🌦️ Real-Time Weather: Get current weather conditions for
+                    both origin and destination, with temperature displayed in
+                    either Celsius or Fahrenheit.
+                  </li>
+                  <li>
+                    🗺️ Personalized Itinerary: Generate a concise,
+                    emoji-enhanced travel plan based on your trip duration and
+                    locations.
+                  </li>
+                  <li>
+                    🎨 Styled Output: Clean, color-coded formatting using the
+                    rich library for readability.
+                  </li>
+
+                  <li>
+                    🔑 API Integration: Seamlessly connects with the SheCodes
+                    Weather and AI APIs.
+                  </li>
+                  <li>
+                    🚫 Error Handling: Alerts users for invalid inputs or
+                    connection issues.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>
+                Tech Stack: Python, Requests, Rich, SheCodes Weather & AI APIs
+              </p>
+              <p>
+                This project highlights my ability to integrate multiple APIs,
+                handle user input efficiently, and create intuitive CLI-based
+                applications.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h2 class="mb-3 mt-4 text-center">
+              📊 Population Visualization
+            </h2>
+            <div
+              class="img-container d-flex flex-wrap align-items-center rounded"
+            >
+              <img
+                src="/images/python-population.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="mt-3 app-button d-flex justify-content-center">
+              <a
+                href="https://replit.com/@jcbietz/PA-W5-Homework#main.py"
+                target="_blank"
+                class="primary-link project-link"
+                title="Internet Population Visualization Link"
+                >Launch Internet Population Graph</a
+              >
+            </div>
+            <div class="pp1 mt-3">
+              <p>
+                The Internet Population Visualization project is a Python-based
+                data analysis tool that reads population data from a CSV file
+                and generates a clear, interactive line plot. This project
+                highlights skills in data processing, visualization, and file
+                handling.
+              </p>
+            </div>
+            <div class="python-list-container rounded shadow">
+              <div class="list">
+                <p>Key Features:</p>
+                <ul>
+                  <li>
+                    📥 CSV Data Processing: Reads and organizes population data
+                    by continent and year.
+                  </li>
+                  <li>
+                    📈 Dynamic Plotting: Creates individual population trends
+                    for each continent.
+                  </li>
+                  <li>
+                    🎨 Clean Visualization: Enhances readability with labeled
+                    axes, a legend, and gridlines.
+                  </li>
+                  <li>
+                    🔄 Efficient Data Structure: Stores data in a structured
+                    dictionary for easy manipulation.
+                  </li>
+                  <li>
+                    📊 Customizable Output: Easily adaptable for different
+                    datasets by changing the CSV input.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p2 mt-4">
+              <p>Tech Stack: Python, CSV, Matplotlib</p>
+              <p>
+                This project demonstrates my ability to process real-world
+                datasets, visualize trends effectively, and present insights
+                through intuitive graphs.
               </p>
             </div>
           </div>
