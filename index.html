@@ -150,7 +150,7 @@
         </div>
         <div class="col-lg-6 text-center">
           <div class="header">
-            <h4 class="display-4 ">👋🏼 Hello, I'm</h4>
+            <h4 class="display-4">👋🏼 Hello, I'm</h4>
             <h1 class="display-1 mt-3">Jacinda Bietz</h1>
             <h2 class="display-6 mb-5 mt-3">Front-end Developer</h2>
             <h5>Check out my projects</h5>
@@ -190,22 +190,22 @@
         </div>
       </div>
     </header>
-    <main class="container-fluid">
-      <h1 class="text-center mt-3" id="web-dev">Web Development Projects</h1>
+    <h1 class="text-center mt-3" id="web-dev">Web Development Projects</h1>
+    <div class="container-fluid project-container">
+      <h2 class="mb-3 mt-4 text-center">World Clock App</h2>
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <h2 class="mb-3 mt-4 text-center">World Clock App</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
+          <!-- Column 1: Project Image & Launch Button -->
+          <div class="col-lg-4 col-md-12">
+            <div class="img-container d-flex flex-wrap rounded">
               <img
                 src="/images/clock.png"
                 class="img-fluid rounded img"
-                alt=""
+                alt="World Clock App"
               />
             </div>
-            <div class="col-sm-2 mt-3">
+
+            <div class="mt-2 mb-3 d-flex">
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=World-Clock&type=star&count=true&size=large"
                 frameborder="0"
@@ -215,7 +215,21 @@
                 title="GitHub"
               ></iframe>
             </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
+          </div>
+
+          <!-- Column 2: Project Description -->
+          <div class="col-lg-4 col-md-6">
+            <p>
+              🕰️ <strong>Jacinda's World Clock App:</strong> Easily track time
+              across multiple cities worldwide. Perfect for work, travel, or
+              staying connected globally.
+            </p>
+            <p class="mt-3">
+              Open-source and built for the community, this app simplifies
+              global time management—helping you stay on schedule, anywhere in
+              the world. 🌍
+            </p>
+            <div class="mt-3 d-flex justify-content-center">
               <a
                 href="https://jacindas-world-clock.netlify.app/"
                 target="_blank"
@@ -224,67 +238,52 @@
                 >Launch Clock App</a
               >
             </div>
-            <div class="p1 mt-3">
-              <p>
-                🕰️ Jacinda's World Clock App is a user-friendly web application
-                designed to help you keep track of time across multiple cities
-                worldwide. Whether you're coordinating with international
-                colleagues, planning travel, or staying in touch with friends
-                and family abroad, this app provides the essential tools to
-                manage time zone differences effectively.
-              </p>
-            </div>
+          </div>
 
-            <div class="list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    Global City Selection: Easily select from a comprehensive
-                    list of cities to view their current local times, ensuring
-                    you're always in sync with various time zones.
-                  </li>
-                  <li>
-                    Current Location Integration: The app automatically detects
-                    and displays your current local time, providing a seamless
-                    reference point for comparing time across different regions.
-                  </li>
-                  <li>
-                    Analog Clock Display: Enjoy a beautifully designed analog
-                    clock that shows the current time, offering a classic,
-                    visual way to stay on track.
-                  </li>
-                  <li>
-                    12-Hour and 24-Hour Formats: Customize your time display
-                    preference with the option to switch between 12-hour and
-                    24-hour formats, catering to your personal or regional
-                    standards.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>
-                This project is open-source, reflecting a commitment to
-                community collaboration and continuous improvement. Experience a
-                straightforward approach to global time management with
-                Jacinda's World Clock App—ensuring you're always on time, no
-                matter where you are in the world. 🕰️🌍
-              </p>
+          <!-- Column 3: Key Features -->
+          <div class="col-lg-4 col-md-6">
+            <div class="list-container rounded shadow p-3 mt-3 mt-sm-0">
+              <p class="fw-bold">Key Features:</p>
+              <ul>
+                <li>
+                  🌍 <strong>Global City Selection:</strong> Easily select from
+                  a comprehensive list of cities to view their current local
+                  times.
+                </li>
+                <li>
+                  📍
+                  <strong>Current Location Integration:</strong> Automatically
+                  detects and displays your local time.
+                </li>
+                <li>
+                  ⏰ <strong>Analog Clock Display:</strong> Beautifully designed
+                  analog clock for a classic visual reference.
+                </li>
+                <li>
+                  🕘 <strong>12-Hour and 24-Hour Formats:</strong> Choose
+                  between 12-hour and 24-hour time display options.
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4">
-            <h2 class="mb-3 mt-4 text-center">Weather Forecast App</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid project-container">
+      <h2 class="mb-3 mt-4 text-center">Weather Forecast App</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Column 1: Project Image & Launch Button -->
+          <div class="col-lg-4 col-md-12">
+            <div class="img-container d-flex flex-wrap rounded">
               <img
                 src="/images/weather.png"
                 class="img-fluid rounded img"
-                alt=""
+                alt="Weather App"
               />
             </div>
-            <div class="col-sm-2 mt-3">
+
+            <div class="mt-2 mb-3 d-flex">
               <iframe
                 src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=weather-app&type=star&count=true&size=large"
                 frameborder="0"
@@ -294,7 +293,36 @@
                 title="GitHub"
               ></iframe>
             </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
+          </div>
+
+          <!-- Column 2: Project Description -->
+          <div class="col-lg-4 col-md-6">
+            <p>
+              ☀️ <strong>Weather Forecast App:</strong> A user-friendly web app
+              delivering accurate, real-time weather updates for your location.
+              Plan your day with confidence!
+            </p>
+            <p class="mt-3">
+              Feeling honored and speechless 🥹💖! SheCodes featured my project
+              on
+              <a
+                class="shecodes-instalink"
+                href="https://www.instagram.com/p/DFnWrQxqhVV/?utm_source=ig_web_copy_link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="20px"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+                Instagram</a
+              >! It’s surreal to see my work recognized by a community that
+              uplifts women in tech. 👩🏻‍💻
+            </p>
+            <div class="mt-3 d-flex justify-content-center">
               <a
                 href="https://jacindas-weather-forcast.netlify.app/"
                 target="_blank"
@@ -303,84 +331,54 @@
                 >Launch Weather App</a
               >
             </div>
-            <div class="p1 mt-3">
-              <p>
-                ☀️Introducing Weather Forecast App, a user-friendly web
-                application designed to provide accurate and up-to-date weather
-                information tailored to your location. Whether you're planning
-                your day or preparing for unexpected weather changes, this app
-                offers the essential details you need to stay informed.
-              </p>
-            </div>
-            <div class="list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    Current Temperature: Instantly view the current temperature
-                    in Celsius or Fahrenheit, ensuring you're dressed
-                    appropriately for the weather.
-                  </li>
-                  <li>
-                    Feels Like Temperature: Understand how the weather truly
-                    feels, taking into account factors like humidity and wind,
-                    so you can plan your activities comfortably.
-                  </li>
-                  <li>
-                    Atmospheric Pressure: Monitor pressure levels to anticipate
-                    weather changes, which can be particularly useful for
-                    individuals sensitive to pressure fluctuations.
-                  </li>
-                  <li>
-                    Humidity Levels: Stay informed about moisture levels in the
-                    air, aiding in health considerations and daily comfort.
-                  </li>
-                  <li>
-                    Wind Speed and Direction: Access real-time data on wind
-                    conditions, essential for outdoor enthusiasts and
-                    professionals alike.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>
-                Feeling incredibly honored and a little speechless 🥹💖. SheCodes
-                featured my project on their
-                <a
-                  class="shecodes-instalink"
-                  href="https://www.instagram.com/p/DFnWrQxqhVV/?utm_source=ig_web_copy_link"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    width="20px"
-                  >
-                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    />
-                  </svg>
-                  Instagram</a
-                >! It’s surreal to see something I built get recognized,
-                especially by a community that uplifts and empowers women in
-                tech.🌡️❄️
-              </p>
+          </div>
+
+          <!-- Column 3: Key Features -->
+          <div class="col-lg-4 col-md-6">
+            <div class="list-container rounded shadow p-3 mt-3 mt-sm-0">
+              <p class="fw-bold">Key Features:</p>
+              <ul>
+                <li>
+                  🌡️ <strong>Current Temperature:</strong> Instantly check the
+                  temperature in Celsius or Fahrenheit for weather-appropriate
+                  dressing.
+                </li>
+                <li>
+                  🌬️ <strong>Feels Like Temperature:</strong> Understand actual
+                  conditions with humidity and wind factored in.
+                </li>
+                <li>
+                  🌦️ <strong>Pressure & Humidity:</strong> Monitor atmospheric
+                  pressure for weather changes and humidity for health and
+                  comfort.
+                </li>
+                <li>
+                  💨 <strong>Wind Speed & Direction:</strong> Get real-time wind
+                  data for outdoor planning.
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4">
-            <h2 class="mb-3 mt-4 text-center">AI Workout Wizard</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid project-container">
+      <h2 class="mb-3 mt-4 text-center">AI Workout Wizard</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Column 1: Project Image & Launch Button -->
+          <div class="col-lg-4 col-md-12">
+            <div class="img-container d-flex flex-wrap rounded">
               <img
                 src="/images/workout.png"
                 class="img-fluid rounded img"
-                alt=""
+                alt="AI Workout Wizard image"
               />
             </div>
-            <div class="col-sm-2 mt-3">
+
+            <div class="mt-2 mb-3 d-flex">
               <iframe
-                src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=weather-app&type=star&count=true&size=large"
+                src="https://ghbtns.com/github-btn.html?user=CindaCodes&repo=Workout-Generator&type=star&count=true&size=large"
                 frameborder="0"
                 scrolling="0"
                 width="170"
@@ -388,7 +386,22 @@
                 title="GitHub"
               ></iframe>
             </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
+          </div>
+
+          <!-- Column 2: Project Description -->
+          <div class="col-lg-4 col-md-6">
+            <p>
+              💪 <strong>AI Workout Wizard:</strong> Create personalized workout
+              plans for any fitness level, from beginner to advanced. Perfect
+              for strength, endurance, or general fitness.
+            </p>
+            <p>
+              🏋🏼‍♀️ Open-source and built for the community, this app ensures fast,
+              reliable access via Netlify—helping you stay on track anytime,
+              anywhere.
+            </p>
+
+            <div class="mt-3 d-flex justify-content-center">
               <a
                 href="https://ai-workout-wizard.netlify.app/"
                 target="_blank"
@@ -397,265 +410,34 @@
                 >Launch Workout App</a
               >
             </div>
-            <div class="p1 mt-3">
-              <p>
-                💪Introducing AI Workout Wizard, an innovative web application
-                designed to revolutionize your fitness journey by providing
-                personalized workout plans tailored to your unique needs.
-                Whether you're a beginner aiming to increase endurance or an
-                advanced athlete focusing on strength training, AI Workout
-                Wizard crafts the perfect regimen for you.
-              </p>
-            </div>
-            <div class="list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    Diverse Workout Types: Choose from a wide array of exercise
-                    categories, including Strength Training, High-Intensity
-                    Interval Training (HIIT),and more, ensuring a well-rounded
-                    fitness experience.
-                  </li>
-                  <li>
-                    Customized Fitness Levels: Select your current fitness
-                    level—Beginner, Intermediate, or Advanced—to receive
-                    workouts that match your capabilities and promote
-                    progressive improvement.
-                  </li>
-                  <li>
-                    Goal-Oriented Plans: Set specific fitness objectives such as
-                    Building Muscle, or Increasing Endurance, and receive
-                    targeted workout plans designed to help you achieve these
-                    goals efficiently.
-                  </li>
-                  <li>
-                    Flexible Time Commitments: Accommodate your schedule with
-                    workout durations ranging from quick 5-minute sessions to
-                    comprehensive 60-minute routines, making it easier to stay
-                    consistent regardless of time constraints.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>
-                AI Workout Wizard is an open-source project, reflecting a
-                commitment to community collaboration and continuous
-                enhancement. The application is hosted on Netlify, ensuring
-                reliable and fast access for users worldwide.🏋🏼‍♀️
-              </p>
+          </div>
+
+          <!-- Column 3: Key Features -->
+          <div class="col-lg-4 col-md-6">
+            <div class="list-container rounded shadow p-3 mt-3 mt-sm-0">
+              <p class="fw-bold">Key Features:</p>
+              <ul>
+                <li>
+                  💪 <strong>Workout Variety:</strong> Strength, HIIT, and more
+                  for a balanced routine.
+                </li>
+                <li>
+                  ⚡ <strong>Custom Fitness Levels:</strong> Beginner to
+                  Advanced workouts tailored to you.
+                </li>
+                <li>
+                  🎯 <strong>Goal-Based Plans:</strong> Build muscle, boost
+                  endurance, and achieve results.
+                </li>
+                <li>
+                  ⏳ <strong>Flexible Durations:</strong> Quick 5-min sessions
+                  to full 60-min workouts.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <h1 class="text-center mt-3" id="python">Python Projects</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h2 class="mb-3 mt-4 text-center">🌤️ Weather App CLI</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
-              <img
-                src="/images/python-weather.png"
-                class="img-fluid rounded img"
-                alt=""
-              />
-            </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
-              <a
-                href="https://replit.com/@jcbietz/PB-Final-Project"
-                target="_blank"
-                class="primary-link project-link"
-                title="Weather App CLI"
-                >Launch Weather App CLI</a
-              >
-            </div>
-            <div class="pp1 mt-3">
-              <p>
-                This Python-based Weather App is a command-line tool that
-                provides real-time weather updates and forecasts for any city
-                worldwide. It leverages the SheCodes Weather API to deliver
-                accurate results while enhancing the user experience with
-                colorful output using the rich library.
-              </p>
-            </div>
-
-            <div class="python-list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    🌡️ Current Weather: Instantly view the current temperature
-                    for any city.
-                  </li>
-                  <li>
-                    📅 5-Day Forecast: Get daily temperature predictions for the
-                    upcoming days.
-                  </li>
-                  <li>
-                    🎨 Styled Output: Clean, color-coded display for better
-                    readability.
-                  </li>
-                  <li>
-                    🔑 API Integration: Seamlessly connects with the SheCodes
-                    Weather API.
-                  </li>
-                  <li>
-                    🎨 🛠️ Error Handling: Prompts users if no valid city name is
-                    provided.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>Tech Stack: Python, Requests, Rich, SheCodes Weather API</p>
-              <p>
-                This project highlights my ability to integrate APIs, manage
-                data formatting, and create user-friendly CLI applications.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h2 class="mb-3 mt-4 text-center">🚙 AI Itinerary Planner</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
-              <img
-                src="/images/python-itinerary.png"
-                class="img-fluid rounded img"
-                alt=""
-              />
-            </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
-              <a
-                href="https://colab.research.google.com/drive/1a5i1TmzIHqBM4f2-kR2RiyD4cicyvgEM#scrollTo=yocjnxYJJEBJ"
-                target="_blank"
-                class="primary-link project-link"
-                title="AI Itinerary Project 
-                Link"
-                >Launch AI Itinerary Planner</a
-              >
-            </div>
-            <div class="pp1 mt-3">
-              <p>
-                The AI Travel Itinerary Planner is an interactive Python-based
-                command-line tool that simplifies trip planning. It generates
-                personalized travel itineraries and provides real-time weather
-                updates for both departure and destination cities. This project
-                showcases API integration, user input handling, and rich CLI
-                formatting.
-              </p>
-            </div>
-            <div class="python-list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    🌦️ Real-Time Weather: Get current weather conditions for
-                    both origin and destination, with temperature displayed in
-                    either Celsius or Fahrenheit.
-                  </li>
-                  <li>
-                    🗺️ Personalized Itinerary: Generate a concise,
-                    emoji-enhanced travel plan based on your trip duration and
-                    locations.
-                  </li>
-                  <li>
-                    🎨 Styled Output: Clean, color-coded formatting using the
-                    rich library for readability.
-                  </li>
-
-                  <li>
-                    🔑 API Integration: Seamlessly connects with the SheCodes
-                    Weather and AI APIs.
-                  </li>
-                  <li>
-                    🚫 Error Handling: Alerts users for invalid inputs or
-                    connection issues.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>
-                Tech Stack: Python, Requests, Rich, SheCodes Weather & AI APIs
-              </p>
-              <p>
-                This project highlights my ability to integrate multiple APIs,
-                handle user input efficiently, and create intuitive CLI-based
-                applications.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h2 class="mb-3 mt-4 text-center">📊 Population Visualization</h2>
-            <div
-              class="img-container d-flex flex-wrap align-items-center rounded"
-            >
-              <img
-                src="/images/python-population.png"
-                class="img-fluid rounded img"
-                alt=""
-              />
-            </div>
-            <div class="mt-3 app-button d-flex justify-content-center">
-              <a
-                href="https://replit.com/@jcbietz/PA-W5-Homework#main.py"
-                target="_blank"
-                class="primary-link project-link"
-                title="Internet Population Visualization Link"
-                >Launch Internet Population Graph</a
-              >
-            </div>
-            <div class="pp1 mt-3">
-              <p>
-                The Internet Population Visualization project is a Python-based
-                data analysis tool that reads population data from a CSV file
-                and generates a clear, interactive line plot. This project
-                highlights skills in data processing, visualization, and file
-                handling.
-              </p>
-            </div>
-            <div class="python-list-container rounded shadow">
-              <div class="list">
-                <p>Key Features:</p>
-                <ul>
-                  <li>
-                    📥 CSV Data Processing: Reads and organizes population data
-                    by continent and year.
-                  </li>
-                  <li>
-                    📈 Dynamic Plotting: Creates individual population trends
-                    for each continent.
-                  </li>
-                  <li>
-                    🎨 Clean Visualization: Enhances readability with labeled
-                    axes, a legend, and gridlines.
-                  </li>
-                  <li>
-                    🔄 Efficient Data Structure: Stores data in a structured
-                    dictionary for easy manipulation.
-                  </li>
-                  <li>
-                    📊 Customizable Output: Easily adaptable for different
-                    datasets by changing the CSV input.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="p2 mt-4">
-              <p>Tech Stack: Python, CSV, Matplotlib</p>
-              <p>
-                This project demonstrates my ability to process real-world
-                datasets, visualize trends effectively, and present insights
-                through intuitive graphs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
   </body>
 </html>

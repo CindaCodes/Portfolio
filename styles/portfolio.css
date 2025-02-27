@@ -3,10 +3,8 @@
   --font-family-2: "Bricolage Grotesque", serif;
   --primary-color: #096487;
   --secondary-color: #f0c5c8;
-  --tertiary-color: #c1817c;
-  --quaternary-color: #c1c589;
-  --quinary-color: #c1af87;
-  --box-shadow: 0 5px 10px #445c3c;
+  --tertiary-color: #90CEEE;
+  --box-shadow: 0 5px 10px #58758D;
 }
 
 body {
@@ -19,19 +17,8 @@ body {
 /*Header*/
 header {
   padding: 20px, 0;
-  background: linear-gradient(
-    to top,
-    var(--tertiary-color) 0%,
-    var(--tertiary-color) 1%,
-    #e0e0e0 26%,
-    var(--secondary-color) 48%,
-    #d9d9d9 75%,
-    var(--tertiary-color) 100%
-    
-  );
     /* Remove Bootstrap's unwanted padding */
   padding-left: 0 !important;
-  padding-right: 0!important;
 }
 
 .header {
@@ -44,6 +31,8 @@ h2,
 h3 {
   font-family: var(--font-family-2);
 }
+
+
 
 .navigation-links {
   display: flex;
@@ -88,7 +77,8 @@ h3 {
 
 /*Body*/
 .img {
-  border: 10px solid var(--tertiary-color);
+  border: 10px solid var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .list-container {
