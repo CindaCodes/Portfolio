@@ -16,6 +16,7 @@ body {
 
 /*Header*/
 header {
+  padding: 20px;
   background: linear-gradient(
     to top,
     var(--tertiary-color) 0%,
@@ -28,7 +29,7 @@ header {
 }
 
 .header {
-  margin: 120px auto;
+  margin-top: 200px;
 }
 
 h1,
@@ -83,7 +84,6 @@ h3 {
   border: 10px solid var(--tertiary-color);
 }
 
-
 .list-container {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -133,25 +133,25 @@ h3 {
   max-width: 60%;
 }
 .slider {
+  width: 100%;
   height: var(--height);
   overflow: hidden;
-  width: 100%;
 }
 
 .slider .list {
   display: flex;
+  width: 100%;
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
-  width: 100%;
 }
 
 .slider .list .item {
-  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
-  animation: autoRun 10s linear infinite;
-  height: var(--height);
-  left: 100%;
-  position: absolute;
   width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
 }
 
 .slider .list .item img {
@@ -167,19 +167,22 @@ h3 {
 }
 
 @media (max-width: 576px) {
-.home-img{
-  width: 100%;
-}
-h4{
-  margin-top: 0;
-}
-.navigation-links{
-  margin-top: 10px;
-}
-.navigation-links a {
-  margin: 5px;
-}
-.navigation-links img {
-  height: 30px;
-}
+  .header{
+    margin-top: 0;
+  }
+  .home-img {
+    width: 100%;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  .navigation-links {
+    margin-top: 10px;
+  }
+  .navigation-links a {
+    margin: 5px;
+  }
+  .navigation-links img {
+    height: 30px;
+  }
 }
