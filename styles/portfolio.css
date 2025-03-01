@@ -33,6 +33,21 @@ h2,
 h3 {
   font-family: var(--font-family-2);
 }
+/*Home Page*/
+/* Wave Animation */
+.wave {
+    display: inline-block;
+    animation: waveHand 1s infinite ease-in-out;
+    transform-origin: 70% 70%; /* Adjust rotation point */
+}
+
+@keyframes waveHand {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
 
 .navigation-links {
   display: flex;
@@ -151,19 +166,10 @@ h3 {
   }
 }
 
+/*About Page*/
 
-#author:hover{
-  color: #111;
-}
-/* ===== SKILLS =====*/
-.skills__container {
-  row-gap: 2rem;
-}
-.skills__subtitle {
-  margin-bottom: var(--mb-3);
-}
 .skills__name {
-  display: inline-block;
+
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: 0.25rem 0.5rem;
@@ -175,6 +181,8 @@ h3 {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
 }
+
+/*Picture Bounce*/
 @keyframes bounceIn {
   0% {
     transform: scale(0.5);
@@ -193,6 +201,38 @@ h3 {
 .bounce-in {
   animation: bounceIn 0.8s ease-out;
 }
+
+
+/*About letter drop*/
+h1 span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: dropIn 0.5s ease forwards;
+}
+
+@keyframes dropIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add delay for each letter */
+h1 span:nth-child(1) { animation-delay: 0s; }
+h1 span:nth-child(2) { animation-delay: 0.1s; }
+h1 span:nth-child(3) { animation-delay: 0.2s; }
+h1 span:nth-child(4) { animation-delay: 0.3s; }
+h1 span:nth-child(5) { animation-delay: 0.4s; }
+h1 span:nth-child(6) { animation-delay: 0.5s; }
+h1 span:nth-child(7) { animation-delay: 0.6s; }
+h1 span:nth-child(8) { animation-delay: 0.7s; }
+h1 span:nth-child(9) { animation-delay: 0.8s; }
+h1 span:nth-child(10) { animation-delay: 0.9s; }
 
 @media (max-width: 576px) {
   .header {
