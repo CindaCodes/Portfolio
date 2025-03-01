@@ -2,12 +2,12 @@
   --font-family-1: "Roboto", serif;
   --font-family-2: "Bricolage Grotesque", serif;
   --primary-color: #096487;
-  --secondary-color: #f0c5c8;
-  --tertiary-color: #90ceee;
+  --secondary-color: #fff;
+  --tertiary-color: #ffcc00;
   --box-shadow: 0 5px 10px #58758d;
   --mb-1: 0.5rem;
   --mb-2: 1rem;
-  --mb-3: 1.5rem;
+  --mb-3: var(--mb-3);
   --mb-4: 2rem;
 }
 
@@ -36,17 +36,27 @@ h3 {
 /*Home Page*/
 /* Wave Animation */
 .wave {
-    display: inline-block;
-    animation: waveHand 1s infinite ease-in-out;
-    transform-origin: 70% 70%; /* Adjust rotation point */
+  display: inline-block;
+  animation: waveHand 1s infinite ease-in-out;
+  transform-origin: 70% 70%; /* Adjust rotation point */
 }
 
 @keyframes waveHand {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(15deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-15deg); }
-    100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .navigation-links {
@@ -58,36 +68,47 @@ h3 {
   margin: 20px;
 }
 
-.blue-link {
-  background: var(--primary-color);
-  border-radius: 4px;
-  box-shadow: var(--box-shadow);
-  color: var(--secondary-color);
-  font-family: var(--font-family-2);
-  padding: 20px 15px;
+.button {
+  border: 4px solid var(--primary-color);
+  padding: 16px 24px;
+  position: relative;
+  background-color: transparent;
   text-decoration: none;
-  text-transform: capitalize;
-}
+  margin: 30px;
 
-.blue-link:hover {
-  background: var(--secondary-color);
-  color: var(--primary-color);
-}
+  span {
 
-.pink-link {
-  background: var(--secondary-color);
-  border-radius: 4px;
-  box-shadow: var(--box-shadow);
-  color: var(--primary-color);
-  font-family: var(--font-family-2);
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-family: var(--font-family-2);
+    color: var(--primary-color);
+  }
 
-.pink-link:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  &:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    content: "";
+    z-index: -1;
+    transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(-10px, -10px);
+      width: calc(100% - 10px);
+    }
+  }
+
+  &:active {
+    &:after {
+      width: 100%;
+    }
+  }
 }
 
 .list-container {
@@ -169,7 +190,6 @@ h3 {
 /*About Page*/
 
 .skills__name {
-
   margin-right: var(--mb-2);
   margin-bottom: var(--mb-3);
   padding: 0.25rem 0.5rem;
@@ -202,37 +222,85 @@ h3 {
   animation: bounceIn 0.8s ease-out;
 }
 
-
 /*About letter drop*/
 h1 span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(-50px);
-    animation: dropIn 0.5s ease forwards;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: dropIn 0.5s ease forwards;
 }
 
 @keyframes dropIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Add delay for each letter */
-h1 span:nth-child(1) { animation-delay: 0s; }
-h1 span:nth-child(2) { animation-delay: 0.1s; }
-h1 span:nth-child(3) { animation-delay: 0.2s; }
-h1 span:nth-child(4) { animation-delay: 0.3s; }
-h1 span:nth-child(5) { animation-delay: 0.4s; }
-h1 span:nth-child(6) { animation-delay: 0.5s; }
-h1 span:nth-child(7) { animation-delay: 0.6s; }
-h1 span:nth-child(8) { animation-delay: 0.7s; }
-h1 span:nth-child(9) { animation-delay: 0.8s; }
-h1 span:nth-child(10) { animation-delay: 0.9s; }
+h1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 0.8s;
+}
+h1 span:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+/*sub heading*/
+.fancy-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Glowing Stars Effect */
+.star {
+  animation: blink 1.5s infinite alternate ease-in-out;
+}
+
+/* Keyframes for Blinking Stars */
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 576px) {
   .header {
@@ -253,5 +321,9 @@ h1 span:nth-child(10) { animation-delay: 0.9s; }
   .navigation-links img {
     height: 30px;
   }
-  
+
+  .fancy-text {
+    font-size: var(--mb-3);
+    letter-spacing: 1px;
+  }
 }
