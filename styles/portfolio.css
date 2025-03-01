@@ -75,6 +75,7 @@ h3 {
   background-color: transparent;
   text-decoration: none;
   margin: 30px;
+  
 
   span {
 
@@ -322,6 +323,9 @@ h1 span:nth-child(10) {
     height: 30px;
   }
 
+  .button {
+    margin: 5px;
+  }
   .fancy-text {
     font-size: var(--mb-3);
     letter-spacing: 1px;
