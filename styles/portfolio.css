@@ -7,14 +7,14 @@
   --box-shadow: 0 5px 10px #58758d;
   --mb-1: 0.5rem;
   --mb-2: 1rem;
-  --mb-3: var(--mb-3);
+  --mb-3: 1.5rem;
   --mb-4: 2rem;
 }
 
 body {
-  padding-top: 50px;
-  font-family: var(--font-family-1);
   color: var(--primary-color);
+  font-family: var(--font-family-1);
+  padding-top: 50px;
 }
 
 /*Header*/
@@ -36,8 +36,8 @@ h3 {
 /*Home Page*/
 /* Wave Animation */
 .wave {
-  display: inline-block;
   animation: waveHand 1s infinite ease-in-out;
+  display: inline-block;
   transform-origin: 70% 70%; /* Adjust rotation point */
 }
 
@@ -69,33 +69,31 @@ h3 {
 }
 
 .button {
+  background-color: transparent;
   border: 4px solid var(--primary-color);
+  margin: 30px;
   padding: 16px 24px;
   position: relative;
-  background-color: transparent;
   text-decoration: none;
-  margin: 30px;
-  
 
   span {
-
-    text-transform: uppercase;
+    color: var(--primary-color);
+    font-family: var(--font-family-2);
     font-weight: bold;
     letter-spacing: 5px;
-    font-family: var(--font-family-2);
-    color: var(--primary-color);
+    text-transform: uppercase;
   }
 
   &:after {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 100%;
-    width: 100%;
     background-color: var(--tertiary-color);
     content: "";
-    z-index: -1;
+    height: 100%;
+    left: 10px;
+    position: absolute;
+    top: 10px;
     transition: transform 0.2s ease-in, width 0.2s ease-out 0.2s;
+    width: 100%;
+    z-index: -1;
   }
 
   &:hover {
@@ -157,25 +155,25 @@ h3 {
 
 /* Marquee Container */
 .marquee {
-  width: 100vw; /* Full screen width */
   overflow: hidden;
-  white-space: nowrap;
   padding: 20px 0;
   position: relative;
+  white-space: nowrap;
+  width: 100vw; /* Full screen width */
 }
 
 /* Marquee Content */
 .marquee-content {
+  animation: marqueeScroll 15s linear infinite; /* Adjust speed */
   display: flex;
   width: 200%; /* Double width for seamless looping */
-  animation: marqueeScroll 15s linear infinite; /* Adjust speed */
 }
 
 /* Individual Images */
 .marquee-content img {
-  width: 200px; /* Adjust size */
   height: auto;
   margin: 0 10px; /* Spacing between images */
+  width: 200px; /* Adjust size */
 }
 
 /* Keyframes for Infinite Scroll */
@@ -191,12 +189,12 @@ h3 {
 /*About Page*/
 
 .skills__name {
-  margin-right: var(--mb-2);
-  margin-bottom: var(--mb-3);
-  padding: 0.25rem 0.5rem;
   background-color: var(--primary-color);
   border-radius: 0.25rem;
   color: var(--tertiary-color);
+  margin-bottom: var(--mb-3);
+  margin-right: var(--mb-2);
+  padding: 0.25rem 0.5rem;
 }
 .skills__name:hover {
   background-color: var(--tertiary-color);
@@ -206,16 +204,16 @@ h3 {
 /*Picture Bounce*/
 @keyframes bounceIn {
   0% {
-    transform: scale(0.5);
     opacity: 0;
+    transform: scale(0.5);
   }
   50% {
-    transform: scale(1.1);
     opacity: 0.7;
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -225,10 +223,10 @@ h3 {
 
 /*About letter drop*/
 h1 span {
+  animation: dropIn 0.5s ease forwards;
   display: inline-block;
   opacity: 0;
   transform: translateY(-50px);
-  animation: dropIn 0.5s ease forwards;
 }
 
 @keyframes dropIn {
@@ -276,16 +274,16 @@ h1 span:nth-child(10) {
 
 /*sub heading*/
 .fancy-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 2px;
   color: var(--tertiary-color);
   display: flex;
-  justify-content: center;
-  gap: 10px;
   flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  gap: var(--mb-1);
+  justify-content: center;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 /* Glowing Stars Effect */
@@ -303,6 +301,95 @@ h1 span:nth-child(10) {
   }
 }
 
+/*Work Page*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(550px);
+}
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.banner .slider .item img:hover {
+  transform: scale(1.2); /* Increase size by 20% */
+}
+
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.banner .content .model {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/159/035/original/Cinda_typing.png?1740851311");
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+
+}
+@media screen and (max-width: 1023px) {
+  .banner .slider {
+    width: 250px;
+    height: 175px;
+    left: calc(50% - 80px);
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
+  }
+}
+@media screen and (max-width: 767px) {
+}
 @media (max-width: 576px) {
   .header {
     margin-top: 0;
@@ -322,12 +409,26 @@ h1 span:nth-child(10) {
   .navigation-links img {
     height: 30px;
   }
-
-  .button {
-    margin: 5px;
+  .button span {
+    letter-spacing: normal;
   }
+
   .fancy-text {
     font-size: var(--mb-3);
-    letter-spacing: 1px;
+    gap: 0;
+  }
+  .banner .slider {
+    width: 150px;
+    height: 100px;
+    left: calc(50% - 50px);
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
+  }
+  .banner .content h1 {
+    font-size: 5em;
   }
 }
