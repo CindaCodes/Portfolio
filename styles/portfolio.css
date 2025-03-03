@@ -435,9 +435,10 @@ h1 span:nth-child(10) {
     gap: 0;
   }
   .banner .slider {
-    width: 150px;
-    height: 100px;
+    width: 125px;
+    height: 85px;
     left: calc(50% - 50px);
+    font-size: smaller;
   }
   .banner .slider .item {
     transform: rotateY(
