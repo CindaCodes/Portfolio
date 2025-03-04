@@ -401,6 +401,7 @@ footer {
   text-align: center;
   position: relative;
   width: 100%;
+  margin-top: 20px;
 }
 
 footer a {
@@ -484,9 +485,9 @@ footer p {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .header {
-    margin-top: 0;
+    margin-top: 5px;
   }
   .home-img {
     width: 100%;
@@ -534,7 +535,19 @@ footer p {
     height: 55vh;
     bottom: 185px;
   }
-
+  .container{
+    padding-bottom: 20px;
+  }
+  .contact-form {
+    width: 95%;
+  }
+  .form-control {
+    width: 100%;
+  }
+footer{
+  position: relative;
+  margin-top: 50px;
+}
   footer .social-links a {
     margin: 0;
   }
