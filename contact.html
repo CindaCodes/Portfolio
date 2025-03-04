@@ -68,7 +68,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -165,49 +165,69 @@
       </div>
     </nav>
 
-    <section class="container text-center mt-5">
-      <h1 class="display-1 font-weight-bold">Contact Me</h1>
-      <h4 class="mt-3">
-        I'm always looking for new opportunities to collaborate on projects or
-        discuss web development.
-      </h4>
-      <h4>
-        Feel free to reach out to me using the form below or by emailing me
-        directly at
-        <a href="mailto:cinda.codes@gmail.com">cinda.codes@gmail.com</a>
-      </h4>
-      <h2 class="text-center mt-3">I look forward to hearing from you!</h2>
-      <div class="d-flex justify-content-center align-items-center vh-70 mt-4">
-        <div class="contact-form">
-          <h2 class="text-start mb-4">Contact Me</h2>
-          <form action="https://formspree.io/f/movjgbpq" method="POST">
-            <div class="mb-3 text-start">
-              <label class="form-label">Your Email:</label>
-              <input type="email" name="email" class="form-control" required />
-            </div>
-            <div class="mb-3 text-start">
-              <label class="form-label">Your Name:</label>
-              <input type="text" name="name" class="form-control" required />
-            </div>
-            <div class="mb-3 text-start">
-              <label class="form-label">Subject:</label>
-              <input type="text" name="subject" class="form-control" required />
-            </div>
-            <div class="mb-3 text-start">
-              <label class="form-label">Your Message:</label>
-              <textarea
-                name="message"
-                class="form-control"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="button">Send</button>
-          </form>
+    <div class="container">
+      <div class="row">
+        <section class="col-lg-6 container text-center mt-5">
+          <h1 class="display-3 font-weight-bold">Let's work together!</h1>
+          <h4 class="mt-3 mb-3">
+            I'm always looking for new opportunities to collaborate on projects
+            or discuss web development.
+          </h4>
+          <p class="display-5">
+            Feel free to reach out to me using this form <span class="arrow d-none d-md-block">→</span><br />
+            or by emailing me directly at
+            <a
+              href="mailto:cinda.codes@gmail.com"
+              class="text-decoration-none text-reset"
+              >cinda.codes@gmail.com</a
+            >
+          </p>
+          <h2 class="text-center mt-5">I look forward to hearing from you!</h2>
+        </section>
+        <div
+          class="col-lg-6 d-flex justify-content-center align-items-center vh-70 mt-4"
+        >
+          <div class="contact-form">
+            <h2 class="text-start mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/movjgbpq" method="POST">
+              <div class="mb-3 text-start">
+                <label class="form-label">Your Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-start">
+                <label class="form-label">Your Name:</label>
+                <input type="text" name="name" class="form-control" required />
+              </div>
+              <div class="mb-3 text-start">
+                <label class="form-label">Subject:</label>
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3 text-start">
+                <label class="form-label">Your Message:</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="button">Send</button>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
-    <footer class="text-center mt-5">
+    </div>
+     <footer class="text-center mt-5">
       <a href="mailto:cinda.codes@gmail.com" target="_blank" class="mb-5"
         >cinda.codes@gmail.com</a
       >
@@ -281,6 +301,8 @@
         <a
           href="https://stackoverflow.com/users/29876393/jacinda-bietz?tab=profile"
           target="_blank"
+          width="25px"
+          class="ms-3 me-3"
           id="stack overflow link"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -289,6 +311,12 @@
               d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"
             />
           </svg>
+        </a>
+        <br />  
+
+        <a href="/index.html" class="next-page mt-3">
+          Go back Home.
+          <span class="arrow">→</span>
         </a>
       </div>
     </footer>
