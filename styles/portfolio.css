@@ -504,7 +504,7 @@ footer p {
   }
 
   .home-img {
-    margin: 10px auto !important;
+    margin: var(--mb-3) auto !important;
     width: 100%;
   }
   h4 {
