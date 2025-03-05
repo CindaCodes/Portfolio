@@ -305,7 +305,7 @@ h1 span:nth-child(10) {
   top: 10%;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  width: 250px;
+  width: 275px;
   z-index: 2;
 }
 @keyframes autoRun {
@@ -320,6 +320,8 @@ h1 span:nth-child(10) {
 .banner .slider .item {
   inset: 0 0 0 0;
   position: absolute;
+  text-shadow: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color),
+    0 0 30px var(--secondary-color);
   transform: rotateY(
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
@@ -487,11 +489,11 @@ footer p {
     margin-top: 5px;
   }
 
-  .about-header,  .cert-header {
+  .about-header,
+  .cert-header {
     height: fit-content;
   }
 
- 
   .home-img {
     margin: 10px auto !important;
     width: 100%;
@@ -550,7 +552,6 @@ footer p {
 
   footer {
     margin-top: 50px;
-    
   }
   footer .social-links a {
     margin: 0;
