@@ -81,7 +81,7 @@ h3 {
 }
 /*Home Page*/
 .wave {
-  animation: waveHand 1s infinite ease-in-out;
+  animation: waveHand 1.5s infinite ease-in-out;
   display: inline-block;
   transform-origin: 70% 70%; /* Adjust rotation point */
 }
@@ -90,14 +90,20 @@ h3 {
   0% {
     transform: rotate(0deg);
   }
-  25% {
+  15% {
     transform: rotate(15deg);
   }
-  50% {
-    transform: rotate(0deg);
+  30% {
+    transform: rotate(-10deg);
+  }
+  45% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-8deg);
   }
   75% {
-    transform: rotate(-15deg);
+    transform: rotate(10deg);
   }
   100% {
     transform: rotate(0deg);
